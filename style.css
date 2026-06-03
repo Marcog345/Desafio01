@@ -1,0 +1,77 @@
+body {
+    background: #2f455c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.painel {
+    width: 480px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.status {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.disponivel {
+    background: #28a745;
+}
+
+.lotado {
+    background: #dc3545;
+}
+
+.conteudo {
+    text-align: center;
+    padding: 30px;
+}
+
+.contador {
+    font-size: 120px;
+    font-weight: bold;
+    color: #2f455c;
+    margin: 20px 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#btn1,
+#btn5 {
+    background: #3498db;
+    color: white;
+}
+
+#btn1:disabled,
+#btn5:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.reset {
+    width: 100%;
+    background: #34495e;
+    color: white;
+    font-weight: bold;
+}

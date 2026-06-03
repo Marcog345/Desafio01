@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Carga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="painel">
+        <div id="status" class="status disponivel">
+            BAIA DISPONÍVEL
+        </div>
+
+        <div class="conteudo">
+            <h1>CONTROLE DE CARGA</h1>
+            <p>Unidade de Distribuição: R-09</p>
+
+            <div class="contador" id="contador">0</div>
+
+            <p>Limite de 50 pacotes</p>
+
+            <div class="botoes">
+                <button id="btn1" onclick="adicionarPacotes(1)">
+                    +1 Pacote
+                </button>
+
+                <button id="btn5" onclick="adicionarPacotes(5)">
+                    +5 Pacotes (Lote)
+                </button>
+            </div>
+        </div>
+
+        <button class="reset" onclick="resetar()">
+            Despachar Carga
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
